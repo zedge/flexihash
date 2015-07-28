@@ -1,0 +1,8 @@
+{
+    "name": "flexihash/flexihash",
+    "description": "Consistent hashing PHP library",
+    "license": "MIT",
+    "autoload": {
+        "classmap": ["classes/"]
+    }
+}
