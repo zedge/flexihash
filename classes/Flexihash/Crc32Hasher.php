@@ -9,16 +9,16 @@
  * @licence http://www.opensource.org/licenses/mit-license.php
  */
 class Flexihash_Crc32Hasher
-	implements Flexihash_Hasher
+    implements Flexihash_Hasher
 {
 
-	/* (non-phpdoc)
-	 * @see Flexihash_Hasher::hash()
-	 */
-	public function hash($string)
-	{
-		return crc32($string);
-	}
+    /* (non-phpdoc)
+     * @see Flexihash_Hasher::hash()
+     */
+    public function hash($string)
+    {
+        return crc32($string);
+    }
 
 }
 

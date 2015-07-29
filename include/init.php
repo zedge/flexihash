@@ -14,17 +14,14 @@
  */
 function flexihash_unshift_include_path($items)
 {
-	$elements = explode(PATH_SEPARATOR, get_include_path());
+    $elements = explode(PATH_SEPARATOR, get_include_path());
 
-	if (is_array($items))
-	{
-		set_include_path(implode(PATH_SEPARATOR, array_merge($items, $elements)));
-	}
-	else
-	{
-		array_unshift($elements, $items);
-		set_include_path(implode(PATH_SEPARATOR, $elements));
-	}
+    if (is_array($items)) {
+        set_include_path(implode(PATH_SEPARATOR, array_merge($items, $elements)));
+    } else {
+        array_unshift($elements, $items);
+        set_include_path(implode(PATH_SEPARATOR, $elements));
+    }
 }
 
 /**
@@ -34,14 +31,13 @@ function flexihash_unshift_include_path($items)
  */
 function flexihash_autoload($className)
 {
-	if (preg_match('#^Flexihash#', $className))
-	{
-		require_once(preg_replace('#_#', '/', $className).'.php');
-	}
+    if (preg_match('#^Flexihash#', $className)) {
+        require_once(preg_replace('#_#', '/', $className) . '.php');
+    }
 }
 
 
-$basedir = realpath(dirname(__FILE__).'/..');
+$basedir = realpath(dirname(__FILE__) . '/..');
 flexihash_unshift_include_path(array("$basedir/classes", "$basedir/lib"));
 spl_autoload_register('flexihash_autoload');
 
