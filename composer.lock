@@ -4,8 +4,9 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3db1e8b4c839f6696ead2621629a4600",
-    "packages": [
+    "hash": "03d3e83d762cb5ac0c12ad57ac94e6d9",
+    "packages": [],
+    "packages-dev": [
         {
             "name": "doctrine/instantiator",
             "version": "1.0.5",
@@ -958,7 +959,6 @@
             "time": "2015-07-01 11:25:50"
         }
     ],
-    "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],
