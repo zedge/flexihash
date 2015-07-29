@@ -5,7 +5,7 @@
  * @package Flexihash
  * @licence http://www.opensource.org/licenses/mit-license.php
  */
-class Flexihash_ClassLoaderTest extends UnitTestCase
+class Flexihash_ClassLoaderTest extends \PHPUnit_Framework_TestCase
 {
 
 	public function testClassLoaderLoadsFlexihashClass()

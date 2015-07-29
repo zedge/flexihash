@@ -4,5 +4,8 @@
     "license": "MIT",
     "autoload": {
         "classmap": ["classes/"]
+    },
+    "require": {
+        "phpunit/phpunit": "^4.7"
     }
 }

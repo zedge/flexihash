@@ -7,7 +7,7 @@
  * @package Flexihash
  * @licence http://www.opensource.org/licenses/mit-license.php
  */
-class Flexihash_BenchmarkTest extends UnitTestCase
+class Flexihash_BenchmarkTest extends \PHPUnit_Framework_TestCase
 {
 	private $_targets = 10;
 	private $_lookups = 1000;
@@ -175,5 +175,9 @@ class Flexihash_BenchmarkTest extends UnitTestCase
 		}
 	}
 
+	private function dump($str)
+	{
+		print "$str\n";
+	}
 }
 
